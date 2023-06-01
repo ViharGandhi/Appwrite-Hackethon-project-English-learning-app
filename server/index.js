@@ -29,7 +29,7 @@ app.use(cors())
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-const PORT = process.env.PORT
+const PORT = process.env.PORT || 5000
 const configuration = new Configuration({
     apiKey:process.env.OPENAI_API
 })
