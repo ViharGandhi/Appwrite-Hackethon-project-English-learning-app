@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #E6F1FF;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 32px;
+    color: #292F36;
+  }
+  
+  .header .greenText {
+    color: #4CAF50;
+  }
+  
+  .topic-generator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .topic-card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #F5F8FA;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .topic-card h2 {
+    margin-right: 10px;
+    color: #333;
+  }
+  
+  .content {
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .content textarea {
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+    border: none;
+    background-color: #F9FAFB;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: 'Georgia', serif;
+    color: #333;
+    outline: none;
+  }
+  button {
+    padding: 10px 20px;
+    background-color: #3D96FF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #1A75FF;
+  }
+  
+  button:active {
+    background-color: #0950C3;
+  }
+  .evaluateButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .evaluateButton:hover {
+    background-color: #45a049;
+  }
+  
+  .evaluateButton:active {
+    background-color: #3e8e41;
+  }
+  .card {
+    margin-top: 20px;
+    background-color: #F5F8FA;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card p {
+    color: #333;
+    font-size: 16px;
+  }
+  .evaluatedText {
+    margin-top: 20px;
+    background-color: #F5F8FA;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .evaluatedText h3 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .evaluatedText p {
+    
+      line-height: 2;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    
+  }
+  svg {
+    width: 3.25em;
+    transform-origin: center;
+    animation: rotate4 2s linear infinite;
+   }
+   
+   circle {
+    fill: none;
+    stroke: hsl(214, 97%, 59%);
+    stroke-width: 2;
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    stroke-linecap: round;
+    animation: dash4 1.5s ease-in-out infinite;
+   }
+   
+   @keyframes rotate4 {
+    100% {
+     transform: rotate(360deg);
+    }
+   }
+   
+   @keyframes dash4 {
+    0% {
+     stroke-dasharray: 1, 200;
+     stroke-dashoffset: 0;
+    }
+   
+    50% {
+     stroke-dasharray: 90, 200;
+     stroke-dashoffset: -35px;
+    }
+   
+    100% {
+     stroke-dashoffset: -125px;
+    }
+   }
+  
+   .container {
+    position: relative;
+  }
+  
+  .downloadButton {
+    position: absolute;
+    top: 40px;
+    right: -30px; /* Increase the right value to shift the button further right */
+    background-color:  #52ff77;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #333333;
+  }
+  
+  /* If you are using Font Awesome for the download icon */
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+  .container {
+    position: relative;
+  }
+  
+  .input-container {
+    margin-bottom: 10px;
+  }
+  
+  .input-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f9fafb;
+    color: #333;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content textarea {
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f9fafb;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: 'Georgia', serif;
+    color: #333;
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  

@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #E6F1FF;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Shifts content to the top */
+  align-items: center;
+  height: 100vh;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  color: #000000;
+  margin-top: 0; /* Remove default margin for the title */
+}
+
+.highlight {
+  color: #4CAF50;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.recordButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; /* Add margin-top to create spacing between h3 and button */
+  width: 65px; /* Adjust the width of the circle */
+  height: 65px; /* Adjust the height of the circle */
+  border-radius: 50%;
+  background-color: #2aff95;
+  border: none;
+  cursor: pointer;
+}
+
+.recordButton i {
+  font-size: 25px;
+  color: #ff0000;
+}
+.recording {
+  animation: sinusoidalWave 2s linear infinite;
+}
+
+
+
+
+.subtitle{
+  color: #4e77ff;
+}
+
+.timerContainer {
+  display: flex;
+  align-items: center;
+}
+
+.timer {
+  margin-left: 30px; /* Add margin to create spacing between button and timer */
+  color: #f80000;
+}
