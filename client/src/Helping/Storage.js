@@ -2,13 +2,13 @@ import { Client, Storage,ID,InputFile } from "appwrite";
 
 const client = new Client()
     .setEndpoint('https://cloud.appwrite.io/v1')
-    .setProject('64665a119b785eed7fc7');
+    .setProject(`${process.env.REACT_APP_PROJECTID}`);
 
 const storage = new Storage(client);
 
 const Storefile = async (data)=>{
     const promise = storage.createFile(
-        '646da0f16ff2903a2e38',
+        `${process.env.REACT_APP_BUCKETID}`,
         ID.unique(),
         data
     );
@@ -17,7 +17,7 @@ const Storefile = async (data)=>{
           
 }
 export const Getfileurl = async(id)=>{
-    const result =  await storage.getFileView('646da0f16ff2903a2e38',id);
+    const result =  await storage.getFileView(`${process.env.REACT_APP_BUCKETID}`,id);
     return result
 }
 export default Storefile
